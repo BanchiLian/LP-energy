@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/oswald-500.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/montserrat-400.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/montserrat-600.woff2') format('woff2');
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-ink-0 text-white font-sans antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    outline: 2px solid #E8595C;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .container-grid {
+    @apply mx-auto w-full max-w-grid px-gutter;
+  }
+
+  .section {
+    @apply py-section-y;
+  }
+
+  .eyebrow {
+    @apply text-sm font-semibold uppercase tracking-[0.2em] text-energy-red-lt;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-card bg-energy-red px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white hover:bg-energy-wine;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-card border border-white/30 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white hover:border-white;
+  }
+
+  .card {
+    @apply rounded-card border border-line/40 bg-ink-1 p-6;
+  }
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

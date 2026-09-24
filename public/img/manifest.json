@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "w": 1500,
+    "h": 1000,
+    "widths": [
+      480,
+      960,
+      1200
+    ],
+    "src": "/wp-content/uploads/2025/05/11-1-1-2.webp"
+  },
+  "cross": {
+    "w": 765,
+    "h": 1020,
+    "widths": [
+      480
+    ],
+    "src": "/wp-content/uploads/2025/05/123Imagem-do-WhatsApp-de-2025-04-28-as-16.33.53_a7e64dfb-1.webp"
+  },
+  "tenis": {
+    "w": 980,
+    "h": 562,
+    "widths": [
+      480,
+      960
+    ],
+    "src": "/wp-content/uploads/2024/08/Imagem-do-WhatsApp-de-2024-08-23-as-11.42.33_aa2d680e.jpg"
+  },
+  "futebol": {
+    "w": 1500,
+    "h": 1125,
+    "widths": [
+      480,
+      960,
+      1200
+    ],
+    "src": "/wp-content/uploads/2024/08/Diseno-sin-titulo-3-min.jpg"
+  },
+  "escalada": {
+    "w": 1080,
+    "h": 720,
+    "widths": [
+      480,
+      960
+    ],
+    "src": "/wp-content/uploads/2024/08/Snapinsta.app_175537389_211460773746158_9097744042875935842_n_1080.jpg"
+  },
+  "squash": {
+    "w": 1600,
+    "h": 1067,
+    "widths": [
+      480,
+      960,
+      1200,
+      1600
+    ],
+    "src": "/wp-content/uploads/2024/08/squash.jpeg"
+  },
+  "corrida": {
+    "w": 960,
+    "h": 1280,
+    "widths": [
+      480,
+      960
+    ],
+    "src": "/wp-content/uploads/2025/05/123Imagem-do-WhatsApp-de-2025-04-17-as-15.53.02_e50fbac2.webp"
+  },
+  "eventos": {
+    "w": 1920,
+    "h": 1080,
+    "widths": [
+      480,
+      960,
+      1200,
+      1600
+    ],
+    "src": "/wp-content/uploads/2025/05/eventocorporativo1-1.webp"
+  },
+  "energy-road": {
+    "w": 1707,
+    "h": 2560,
+    "widths": [
+      480,
+      960,
+      1200,
+      1600
+    ],
+    "src": "/wp-content/uploads/2025/05/Imagem-do-WhatsApp-de-2025-05-12-as-14.44.08_505b711f-scaled.webp"
+  },
+  "restaurante": {
+    "w": 849,
+    "h": 650,
+    "widths": [
+      480
+    ],
+    "src": "/wp-content/uploads/2024/08/WhatsApp-Image-2019-08-20-at-21.46.06-1-1-e1566683402410-ogmtp7dbgby9b9ekuoz2fmv3juay6gz6fozv2mc02s-e1724356032302.webp"
+  },
+  "churrasqueira": {
+    "w": 849,
+    "h": 650,
+    "widths": [
+      480
+    ],
+    "src": "/wp-content/uploads/2024/08/WhatsApp-Image-2019-08-20-at-21.46.01-3-e1566683300219-ogmtnpsimrwwxhkejjtbzidtovn0zq2h8bt6pujfxg-e1724355981780.webp"
+  },
+  "estacionamento": {
+    "w": 1115,
+    "h": 675,
+    "widths": [
+      480,
+      960
+    ],
+    "src": "/wp-content/uploads/2024/08/28.jpeg"
+  },
+  "pilates": {
+    "w": 600,
+    "h": 421,
+    "widths": [
+      480
+    ],
+    "src": "/wp-content/uploads/2024/08/depositphotos_81541380-stock-photo-pilates-woman-in-reformer-teaser.webp"
+  },
+  "fisioterapia": {
+    "w": 1500,
+    "h": 1000,
+    "widths": [
+      480,
+      960,
+      1200
+    ],
+    "src": "/wp-content/uploads/2025/05/o-que-e-fisioterapia.webp"
+  }
+}
