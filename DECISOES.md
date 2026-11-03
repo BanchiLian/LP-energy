@@ -33,3 +33,13 @@
 - O que derrubou o LCP de 2677ms para 1890ms foi hospedar as fontes localmente em `public/fonts/` (3 woff2, ~50 KB): sairam os dois preconnect e o `<link rel="stylesheet">` para fonts.googleapis.com, entrou um `preload` so do Oswald 500 do `<h1>`.
 - `sizes` do hero fica em `100vw`. Uma tentativa de declarar `50vw` para ganhar LCP foi revertida: o hero e de largura total, entao isso fazia o celular baixar a variante de 480px e exibi-la esticada. Nitidez do hero vale mais que os ~200ms.
 - Auditorias que seguem marcadas (cache lifetimes, render-blocking, network dependency tree, image delivery) sao informativas e dependem dos headers do servidor de hospedagem, nao do codigo. Revisitar na Fase 5.
+
+## Revisao de conteudo pedida pelo cliente (nov/2026)
+- **A Energy mudou de espaco.** Saem os 35 mil m², a divisa Louveira/Jundiai, tenis, futebol, squash, restaurante e churrasqueiras. Endereco novo: Av. Antonio Niero, 155 – Louveira. E-mail: contato.energyesportes@gmail.com.
+- **Hero:** slogan "Move better. Live better." no `<h1>` e "Desde 2013 evoluindo pessoas" no eyebrow (2013 informado pelo cliente).
+- **Modalidades reduzidas a quatro:** TFI, Kids, Endurance e Motion, com o texto do cliente. As fotos dos cards sao provisorias.
+- **Diferencial "Contato com a natureza" virou "Espaco diversificado".**
+- **Secao Estrutura virou "A experiencia vai alem do treino"** (`#experiencia`). As fotos tambem sao provisorias: faltam as atuais de treino e da parte social.
+- **Energy Road saiu.** A secao virou `#eventos`, com a lista nova de eventos, e o botao agora leva ao WhatsApp.
+- **Horario:** 5h as 10h e 15h as 21h. Ainda falta confirmar os dias e o fim de semana.
+- **Depoimentos:** dez respostas do formulario do cliente em carrossel infinito, assinadas como "Aluno(a) Energy" porque vieram sem nome.
