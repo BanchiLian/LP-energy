@@ -78,11 +78,12 @@
   }
 }
 
-@keyframes marquee-scroll {
-  from {
-    transform: translateX(0);
+@layer utilities {
+  /* Carrossel: rola, mas sem barra de rolagem visível */
+  .sem-barra {
+    scrollbar-width: none;
   }
-  to {
-    transform: translateX(-50%);
+  .sem-barra::-webkit-scrollbar {
+    display: none;
   }
 }

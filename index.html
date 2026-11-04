@@ -29,7 +29,7 @@
         <a href="#contato" class="hover:text-white">Contato</a>
       </nav>
 
-      <a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Quero%20agendar%20minha%20aula%20experimental%20gratuita%20na%20Energy." target="_blank" rel="noopener" class="btn-primary hidden !px-4 !py-2 text-xs lg:inline-flex">Agende sua aula experimental grátis</a>
+      <a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Vi%20o%20site%20da%20Energy%20e%20quero%20agendar%20minha%20aula%20experimental%20gratuita." target="_blank" rel="noopener" class="btn-primary hidden !px-4 !py-2 text-xs lg:inline-flex">Agende sua aula experimental grátis</a>
 
       <!-- FASE 3: trocar por overlay de tela cheia -->
       <details class="relative lg:hidden">
@@ -43,7 +43,7 @@
           <a href="#experiencia" class="rounded px-2 py-2 hover:bg-ink-0 hover:text-white">Experiência</a>
           <a href="#eventos" class="rounded px-2 py-2 hover:bg-ink-0 hover:text-white">Eventos</a>
           <a href="#contato" class="rounded px-2 py-2 hover:bg-ink-0 hover:text-white">Contato</a>
-          <a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Quero%20agendar%20minha%20aula%20experimental%20gratuita%20na%20Energy." target="_blank" rel="noopener" class="mt-2 rounded-card bg-energy-red px-3 py-2 text-center text-white">Agende sua aula experimental grátis</a>
+          <a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Vi%20o%20site%20da%20Energy%20e%20quero%20agendar%20minha%20aula%20experimental%20gratuita." target="_blank" rel="noopener" class="mt-2 rounded-card bg-energy-red px-3 py-2 text-center text-white">Agende sua aula experimental grátis</a>
         </nav>
       </details>
     </div>
@@ -215,10 +215,10 @@
       </div>
 
       <!-- TODO cliente: trocar pelas fotos atuais dos treinos e da parte social (galera conversando, comendo, tomando café) -->
-      <div class="group container-grid mt-10 overflow-hidden motion-reduce:snap-x motion-reduce:snap-mandatory motion-reduce:overflow-x-auto">
-        <div class="flex w-max will-change-transform motion-safe:animate-[marquee-scroll_50s_linear_infinite] motion-reduce:w-auto motion-reduce:animate-none group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused]">
+      <div data-carrossel data-velocidade="35" role="region" aria-label="Fotos da experiência Energy" tabindex="0" class="sem-barra container-grid mt-10 overflow-x-auto">
+        <div class="flex w-max">
           <ul class="flex items-stretch pb-4">
-            <li class="mr-6 w-72 shrink-0 motion-reduce:snap-start">
+            <li class="mr-6 w-72 shrink-0">
               <picture class="block overflow-hidden rounded-card">
                 <source type="image/avif" srcset="/img/cross-480.avif 480w" sizes="288px" />
                 <source type="image/webp" srcset="/img/cross-480.webp 480w" sizes="288px" />
@@ -226,7 +226,7 @@
               </picture>
               <p class="mt-3 text-body text-muted">Treino em grupo</p>
             </li>
-            <li class="mr-6 w-72 shrink-0 motion-reduce:snap-start">
+            <li class="mr-6 w-72 shrink-0">
               <picture class="block overflow-hidden rounded-card">
                 <source type="image/avif" srcset="/img/escalada-480.avif 480w, /img/escalada-960.avif 960w" sizes="288px" />
                 <source type="image/webp" srcset="/img/escalada-480.webp 480w, /img/escalada-960.webp 960w" sizes="288px" />
@@ -234,7 +234,7 @@
               </picture>
               <p class="mt-3 text-body text-muted">Escalada indoor</p>
             </li>
-            <li class="mr-6 w-72 shrink-0 motion-reduce:snap-start">
+            <li class="mr-6 w-72 shrink-0">
               <picture class="block overflow-hidden rounded-card">
                 <source type="image/avif" srcset="/img/corrida-480.avif 480w, /img/corrida-960.avif 960w" sizes="288px" />
                 <source type="image/webp" srcset="/img/corrida-480.webp 480w, /img/corrida-960.webp 960w" sizes="288px" />
@@ -242,7 +242,7 @@
               </picture>
               <p class="mt-3 text-body text-muted">Corrida</p>
             </li>
-            <li class="mr-6 w-72 shrink-0 motion-reduce:snap-start">
+            <li class="mr-6 w-72 shrink-0">
               <picture class="block overflow-hidden rounded-card">
                 <source type="image/avif" srcset="/img/energy-road-480.avif 480w, /img/energy-road-960.avif 960w" sizes="288px" />
                 <source type="image/webp" srcset="/img/energy-road-480.webp 480w, /img/energy-road-960.webp 960w" sizes="288px" />
@@ -250,7 +250,7 @@
               </picture>
               <p class="mt-3 text-body text-muted">Provas e eventos</p>
             </li>
-            <li class="mr-6 w-72 shrink-0 motion-reduce:snap-start">
+            <li class="mr-6 w-72 shrink-0">
               <picture class="block overflow-hidden rounded-card">
                 <source type="image/avif" srcset="/img/eventos-480.avif 480w, /img/eventos-960.avif 960w" sizes="288px" />
                 <source type="image/webp" srcset="/img/eventos-480.webp 480w, /img/eventos-960.webp 960w" sizes="288px" />
@@ -259,7 +259,7 @@
               <p class="mt-3 text-body text-muted">Comunidade</p>
             </li>
           </ul>
-          <ul aria-hidden="true" class="flex items-stretch pb-4 motion-reduce:hidden">
+          <ul aria-hidden="true" class="flex items-stretch pb-4">
             <li class="mr-6 w-72 shrink-0">
               <picture class="block overflow-hidden rounded-card">
                 <source type="image/avif" srcset="/img/cross-480.avif 480w" sizes="288px" />
@@ -327,127 +327,127 @@
         <h2 class="text-h2 max-w-2xl">Quem treina, recomenda</h2>
       </div>
 
-      <div class="group container-grid mt-10 overflow-hidden motion-reduce:snap-x motion-reduce:snap-mandatory motion-reduce:overflow-x-auto" role="region" aria-label="Depoimentos de alunos" tabindex="0">
-        <div class="flex w-max will-change-transform motion-safe:animate-[marquee-scroll_90s_linear_infinite] motion-reduce:w-auto motion-reduce:animate-none group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused]">
+      <div data-carrossel data-velocidade="40" role="region" aria-label="Depoimentos de alunos" tabindex="0" class="sem-barra container-grid mt-10 overflow-x-auto">
+        <div class="flex w-max">
           <ul class="flex items-stretch pb-4">
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Ganhou meu coração justamente por ter exercícios variados.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Eu reclamo, mas eu amo! Kkkkkkk”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Eu amo, as aulas são muito dinâmicas, eu sofro, me divirto e fico feliz por ter feito.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“É incrível a preocupação que os professores têm com os alunos, isso é um diferencial incrível, não vemos em qualquer academia.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Os professores são excelentes e super atenciosos para adaptar exercícios de acordo com a necessidade de cada um. Isso faz muita diferença na escolha.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Adoro os eventos! Tento participar o máximo possível! Isso pra mim é um diferencial Energy!”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Minha evolução foi enorme, tanto em desempenho quanto em consciência corporal. Melhorei minha biomecânica, ganhei força, resistência e confiança. Saí de um histórico de lesões para a conquista de uma maratona. Uma evolução que superou minhas próprias expectativas!”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Uma coisa que admiro nos professores da Energy é que todos, cada um com seu jeito, querem ver a gente evoluir e superar nossos próprios limites. Pra quem nem corria... tô maravilhosa! Hahaha. Isso também é mérito de quem ensina, incentiva e acredita no nosso potencial.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“O que eu mais gosto é a dinâmica dos treinos! A variedade, os desafios e o fato de cada treino ser diferente. A gente está sempre se superando, aprendendo e evoluindo.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96 motion-reduce:snap-start">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Gosto demais porque minha família sempre é bem-vinda, meu filho ama quando vai treinar comigo e fica na parede de escalada, meu marido me diz que eu sempre volto reclamando mais feliz.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
           </ul>
-          <ul aria-hidden="true" class="flex items-stretch pb-4 motion-reduce:hidden">
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+          <ul aria-hidden="true" class="flex items-stretch pb-4">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Ganhou meu coração justamente por ter exercícios variados.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Eu reclamo, mas eu amo! Kkkkkkk”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Eu amo, as aulas são muito dinâmicas, eu sofro, me divirto e fico feliz por ter feito.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“É incrível a preocupação que os professores têm com os alunos, isso é um diferencial incrível, não vemos em qualquer academia.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Os professores são excelentes e super atenciosos para adaptar exercícios de acordo com a necessidade de cada um. Isso faz muita diferença na escolha.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Adoro os eventos! Tento participar o máximo possível! Isso pra mim é um diferencial Energy!”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Minha evolução foi enorme, tanto em desempenho quanto em consciência corporal. Melhorei minha biomecânica, ganhei força, resistência e confiança. Saí de um histórico de lesões para a conquista de uma maratona. Uma evolução que superou minhas próprias expectativas!”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Uma coisa que admiro nos professores da Energy é que todos, cada um com seu jeito, querem ver a gente evoluir e superar nossos próprios limites. Pra quem nem corria... tô maravilhosa! Hahaha. Isso também é mérito de quem ensina, incentiva e acredita no nosso potencial.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“O que eu mais gosto é a dinâmica dos treinos! A variedade, os desafios e o fato de cada treino ser diferente. A gente está sempre se superando, aprendendo e evoluindo.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 flex w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex w-full flex-col justify-between gap-6">
+            <li class="mr-6 w-80 shrink-0 sm:w-96">
+              <blockquote class="card flex flex-col gap-6">
                 <p class="text-body-lg">“Gosto demais porque minha família sempre é bem-vinda, meu filho ama quando vai treinar comigo e fica na parede de escalada, meu marido me diz que eu sempre volto reclamando mais feliz.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
@@ -538,7 +538,7 @@
             <h3 class="text-h3">Fale com a gente</h3>
             <ul class="mt-4 flex flex-col gap-2 text-body text-muted">
               <li>Av. Antônio Niero, 155 – Louveira – SP</li>
-              <li><a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Quero%20agendar%20minha%20aula%20experimental%20gratuita%20na%20Energy." target="_blank" rel="noopener" class="hover:text-white">WhatsApp: (19) 99636-4904</a></li>
+              <li><a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Quero%20falar%20com%20a%20equipe%20da%20Energy." target="_blank" rel="noopener" class="hover:text-white">WhatsApp: (19) 99636-4904</a></li>
               <li><a href="mailto:contato.energyesportes@gmail.com" class="hover:text-white">contato.energyesportes@gmail.com</a></li>
               <li>Das 5h às 10h e das 15h às 21h</li>
               <li><a href="https://www.instagram.com/energy.treinamento" target="_blank" rel="noopener" class="hover:text-white">@energy.treinamento</a></li>
@@ -574,7 +574,7 @@
   </footer>
 
   <!-- FASE 3: só aparecer depois do hero -->
-  <a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Quero%20agendar%20minha%20aula%20experimental%20gratuita%20na%20Energy." target="_blank" rel="noopener" aria-label="Falar no WhatsApp com a Energy Treinamento" class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-energy-red text-white shadow-lg md:hidden">
+  <a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20tenho%20uma%20d%C3%BAvida%20sobre%20a%20Energy." target="_blank" rel="noopener" aria-label="Falar no WhatsApp com a Energy Treinamento" class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-energy-red text-white shadow-lg md:hidden">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <path d="M4 20l1.2-3.6A8 8 0 1 1 8.6 19L4 20z" />
     </svg>
