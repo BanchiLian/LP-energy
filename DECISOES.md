@@ -41,7 +41,7 @@
 - **Diferencial "Contato com a natureza" virou "Espaco diversificado".**
 - **Secao Estrutura virou "A experiencia vai alem do treino"** (`#experiencia`). As fotos tambem sao provisorias: faltam as atuais de treino e da parte social.
 - **Energy Road saiu.** A secao virou `#eventos`, com a lista nova de eventos, e o botao agora leva ao WhatsApp.
-- **Horario:** 5h as 10h e 15h as 21h. Ainda falta confirmar os dias e o fim de semana.
+- **Horario:** segunda a sexta, 5h as 10h e 15h as 21h (confirmado pelo cliente). Instagram segue @energy.treinamento.
 - **Depoimentos:** dez respostas do formulario do cliente em carrossel infinito, assinadas como "Aluno(a) Energy" porque vieram sem nome.
 - **Carrosseis em JS (`src/carrossel.js`, ~1 KB).** O marquee so em CSS nao deixava arrastar no celular e, com reduced-motion, virava uma lista com fim. Agora a rolagem e automatica e infinita (duas listas identicas, volta exatamente uma lista), aceita dedo, trackpad e teclado, e pausa com mouse em cima, toque ou foco. Com reduced-motion nao anda sozinho, mas o loop no arraste continua. A distancia da volta vem do `offsetLeft` da copia, nao de `scrollWidth / 2`, porque este soma o padding lateral e gerava um salto de 48 px.
 - **Cada botao de WhatsApp manda uma mensagem propria** (topo, hero, modalidades, eventos, contato, botao flutuante), como pede a regra do CLAUDE.md.
