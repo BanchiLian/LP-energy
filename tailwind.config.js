@@ -27,7 +27,7 @@ export default {
         'sm': ['0.875rem', { lineHeight: '1.5' }]
       },
       spacing: {
-        'section-y': 'clamp(5rem, 9vw, 9rem)',
+        'section-y': 'clamp(3.5rem, 6vw, 6rem)',
         'gutter': 'clamp(1.25rem, 4vw, 3rem)'
       },
       maxWidth: {

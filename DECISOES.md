@@ -47,3 +47,9 @@
 - **Cada botao de WhatsApp manda uma mensagem propria** (topo, hero, modalidades, eventos, contato, botao flutuante), como pede a regra do CLAUDE.md.
 - **`public/robots.txt` criado.** Sem ele o servidor devolvia o HTML e o Lighthouse marcava robots invalido (SEO 92).
 - Lighthouse mobile depois disso: Performance 99, Acessibilidade 100, Boas praticas 96, SEO 100. O unico erro de console e o favicon, que fica para a Fase 5.
+- **Secao Experiencia removida** a pedido do cliente (e o link "Experiencia" do menu e do rodape). Com isso, as fotos da parte social nao sao mais necessarias.
+- **Depoimentos em passos:** o carrossel avanca um card a cada 4 s (transicao de 0,7 s inclusa), em loop infinito. Cards com altura igual (texto em cima, nome embaixo), o que tira o vazio abaixo dos cards curtos. As medidas usam `getBoundingClientRect`, porque `offsetLeft` arredonda a largura fracionaria (85vw) e o card ia desalinhando a cada volta.
+- **FAQ:** saiu a pergunta "Quais modalidades a Energy oferece?".
+- **Espaco entre secoes reduzido:** `section-y` passou de `clamp(5rem, 9vw, 9rem)` para `clamp(3.5rem, 6vw, 6rem)`. Eventos e Depoimentos trocaram de fundo para manter a alternancia escuro/claro.
+- **Menu do topo opaco** (`bg-ink-0`, antes 95%): o conteudo aparecia por tras dele ao rolar.
+- **FAQ:** a seta nativa do `<details>` ficava numa linha acima da pergunta. Agora e uma seta propria ao lado da pergunta, que gira ao abrir.

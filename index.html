@@ -16,7 +16,7 @@
   <!-- FASE 3: contador animado; valores em variável -->
   <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-card focus:bg-energy-red focus:px-4 focus:py-3 focus:text-white">Pular para o conteúdo</a>
 
-  <header class="fixed inset-x-0 top-0 z-50 h-16 border-b border-line/40 bg-ink-0/95">
+  <header class="fixed inset-x-0 top-0 z-50 h-16 border-b border-line/40 bg-ink-0">
     <div class="container-grid flex h-full items-center justify-between gap-4">
       <a href="#inicio" class="shrink-0">
         <img src="/img/originais/logo-white.png" width="1000" height="500" alt="Energy Treinamento" class="h-7 w-auto" />
@@ -24,7 +24,6 @@
 
       <nav aria-label="Navegação principal" class="hidden items-center gap-6 text-sm font-semibold uppercase tracking-wide text-muted lg:flex">
         <a href="#modalidades" class="hover:text-white">Modalidades</a>
-        <a href="#experiencia" class="hover:text-white">Experiência</a>
         <a href="#eventos" class="hover:text-white">Eventos</a>
         <a href="#contato" class="hover:text-white">Contato</a>
       </nav>
@@ -40,7 +39,6 @@
         </summary>
         <nav aria-label="Navegação principal (mobile)" class="absolute right-0 top-12 flex w-56 flex-col gap-1 rounded-card border border-line/40 bg-ink-1 p-4 text-sm font-semibold uppercase tracking-wide text-muted shadow-lg">
           <a href="#modalidades" class="rounded px-2 py-2 hover:bg-ink-0 hover:text-white">Modalidades</a>
-          <a href="#experiencia" class="rounded px-2 py-2 hover:bg-ink-0 hover:text-white">Experiência</a>
           <a href="#eventos" class="rounded px-2 py-2 hover:bg-ink-0 hover:text-white">Eventos</a>
           <a href="#contato" class="rounded px-2 py-2 hover:bg-ink-0 hover:text-white">Contato</a>
           <a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Vi%20o%20site%20da%20Energy%20e%20quero%20agendar%20minha%20aula%20experimental%20gratuita." target="_blank" rel="noopener" class="mt-2 rounded-card bg-energy-red px-3 py-2 text-center text-white">Agende sua aula experimental grátis</a>
@@ -207,105 +205,7 @@
       </div>
     </section>
 
-    <section id="experiencia" class="section">
-      <div class="container-grid">
-        <p class="eyebrow">Experiência Energy</p>
-        <h2 class="text-h2 max-w-2xl">A experiência vai além do treino</h2>
-        <p class="mt-4 max-w-xl text-body-lg text-muted">Depois do treino tem café, conversa e uma turma que torce pela sua evolução. Aqui você encontra gente com os mesmos objetivos e faz amizades que vão além da academia.</p>
-      </div>
-
-      <!-- TODO cliente: trocar pelas fotos atuais dos treinos e da parte social (galera conversando, comendo, tomando café) -->
-      <div data-carrossel data-velocidade="35" role="region" aria-label="Fotos da experiência Energy" tabindex="0" class="sem-barra container-grid mt-10 overflow-x-auto">
-        <div class="flex w-max">
-          <ul class="flex items-stretch pb-4">
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/cross-480.avif 480w" sizes="288px" />
-                <source type="image/webp" srcset="/img/cross-480.webp 480w" sizes="288px" />
-                <img src="/img/cross-480.webp" width="765" height="1020" alt="Alunos em treino em grupo na Energy Treinamento" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Treino em grupo</p>
-            </li>
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/escalada-480.avif 480w, /img/escalada-960.avif 960w" sizes="288px" />
-                <source type="image/webp" srcset="/img/escalada-480.webp 480w, /img/escalada-960.webp 960w" sizes="288px" />
-                <img src="/img/escalada-480.webp" width="1080" height="720" alt="Aluno na parede de escalada indoor da Energy" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Escalada indoor</p>
-            </li>
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/corrida-480.avif 480w, /img/corrida-960.avif 960w" sizes="288px" />
-                <source type="image/webp" srcset="/img/corrida-480.webp 480w, /img/corrida-960.webp 960w" sizes="288px" />
-                <img src="/img/corrida-480.webp" width="960" height="1280" alt="Alunos em treino de corrida da Energy" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Corrida</p>
-            </li>
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/energy-road-480.avif 480w, /img/energy-road-960.avif 960w" sizes="288px" />
-                <source type="image/webp" srcset="/img/energy-road-480.webp 480w, /img/energy-road-960.webp 960w" sizes="288px" />
-                <img src="/img/energy-road-480.webp" width="1707" height="2560" alt="Aluna da Energy comemorando em prova de corrida de rua" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Provas e eventos</p>
-            </li>
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/eventos-480.avif 480w, /img/eventos-960.avif 960w" sizes="288px" />
-                <source type="image/webp" srcset="/img/eventos-480.webp 480w, /img/eventos-960.webp 960w" sizes="288px" />
-                <img src="/img/eventos-480.webp" width="1920" height="1080" alt="Grupo reunido em evento da Energy" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Comunidade</p>
-            </li>
-          </ul>
-          <ul aria-hidden="true" class="flex items-stretch pb-4">
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/cross-480.avif 480w" sizes="288px" />
-                <source type="image/webp" srcset="/img/cross-480.webp 480w" sizes="288px" />
-                <img src="/img/cross-480.webp" width="765" height="1020" alt="" tabindex="-1" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Treino em grupo</p>
-            </li>
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/escalada-480.avif 480w, /img/escalada-960.avif 960w" sizes="288px" />
-                <source type="image/webp" srcset="/img/escalada-480.webp 480w, /img/escalada-960.webp 960w" sizes="288px" />
-                <img src="/img/escalada-480.webp" width="1080" height="720" alt="" tabindex="-1" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Escalada indoor</p>
-            </li>
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/corrida-480.avif 480w, /img/corrida-960.avif 960w" sizes="288px" />
-                <source type="image/webp" srcset="/img/corrida-480.webp 480w, /img/corrida-960.webp 960w" sizes="288px" />
-                <img src="/img/corrida-480.webp" width="960" height="1280" alt="" tabindex="-1" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Corrida</p>
-            </li>
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/energy-road-480.avif 480w, /img/energy-road-960.avif 960w" sizes="288px" />
-                <source type="image/webp" srcset="/img/energy-road-480.webp 480w, /img/energy-road-960.webp 960w" sizes="288px" />
-                <img src="/img/energy-road-480.webp" width="1707" height="2560" alt="" tabindex="-1" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Provas e eventos</p>
-            </li>
-            <li class="mr-6 w-72 shrink-0">
-              <picture class="block overflow-hidden rounded-card">
-                <source type="image/avif" srcset="/img/eventos-480.avif 480w, /img/eventos-960.avif 960w" sizes="288px" />
-                <source type="image/webp" srcset="/img/eventos-480.webp 480w, /img/eventos-960.webp 960w" sizes="288px" />
-                <img src="/img/eventos-480.webp" width="1920" height="1080" alt="" tabindex="-1" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
-              </picture>
-              <p class="mt-3 text-body text-muted">Comunidade</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="eventos" class="section bg-ink-1">
+    <section id="eventos" class="section">
       <div class="container-grid grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,26rem)_1fr]">
         <picture class="block overflow-hidden rounded-card">
           <source type="image/avif" srcset="/img/energy-road-480.avif 480w, /img/energy-road-960.avif 960w, /img/energy-road-1200.avif 1200w, /img/energy-road-1600.avif 1600w" sizes="(min-width: 1024px) 420px, 100vw" />
@@ -321,134 +221,134 @@
       </div>
     </section>
 
-    <section id="depoimentos" class="section">
+    <section id="depoimentos" class="section bg-ink-1">
       <div class="container-grid">
         <p class="eyebrow">Depoimentos</p>
         <h2 class="text-h2 max-w-2xl">Quem treina, recomenda</h2>
       </div>
 
-      <div data-carrossel data-velocidade="40" role="region" aria-label="Depoimentos de alunos" tabindex="0" class="sem-barra container-grid mt-10 overflow-x-auto">
+      <div data-carrossel data-intervalo="4000" role="region" aria-label="Depoimentos de alunos" tabindex="0" class="sem-barra container-grid mt-10 overflow-x-auto">
         <div class="flex w-max">
           <ul class="flex items-stretch pb-4">
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Ganhou meu coração justamente por ter exercícios variados.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Ganhou meu coração justamente por ter exercícios variados.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Eu reclamo, mas eu amo! Kkkkkkk”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Eu reclamo, mas eu amo! Kkkkkkk”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Eu amo, as aulas são muito dinâmicas, eu sofro, me divirto e fico feliz por ter feito.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Eu amo, as aulas são muito dinâmicas, eu sofro, me divirto e fico feliz por ter feito.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“É incrível a preocupação que os professores têm com os alunos, isso é um diferencial incrível, não vemos em qualquer academia.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“É incrível a preocupação que os professores têm com os alunos, isso é um diferencial incrível, não vemos em qualquer academia.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Os professores são excelentes e super atenciosos para adaptar exercícios de acordo com a necessidade de cada um. Isso faz muita diferença na escolha.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Os professores são excelentes e super atenciosos para adaptar exercícios de acordo com a necessidade de cada um. Isso faz muita diferença na escolha.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Adoro os eventos! Tento participar o máximo possível! Isso pra mim é um diferencial Energy!”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Adoro os eventos! Tento participar o máximo possível! Isso pra mim é um diferencial Energy!”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Minha evolução foi enorme, tanto em desempenho quanto em consciência corporal. Melhorei minha biomecânica, ganhei força, resistência e confiança. Saí de um histórico de lesões para a conquista de uma maratona. Uma evolução que superou minhas próprias expectativas!”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Minha evolução foi enorme, tanto em desempenho quanto em consciência corporal. Melhorei minha biomecânica, ganhei força, resistência e confiança. Saí de um histórico de lesões para a conquista de uma maratona. Uma evolução que superou minhas próprias expectativas!”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Uma coisa que admiro nos professores da Energy é que todos, cada um com seu jeito, querem ver a gente evoluir e superar nossos próprios limites. Pra quem nem corria... tô maravilhosa! Hahaha. Isso também é mérito de quem ensina, incentiva e acredita no nosso potencial.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Uma coisa que admiro nos professores da Energy é que todos, cada um com seu jeito, querem ver a gente evoluir e superar nossos próprios limites. Pra quem nem corria... tô maravilhosa! Hahaha. Isso também é mérito de quem ensina, incentiva e acredita no nosso potencial.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“O que eu mais gosto é a dinâmica dos treinos! A variedade, os desafios e o fato de cada treino ser diferente. A gente está sempre se superando, aprendendo e evoluindo.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“O que eu mais gosto é a dinâmica dos treinos! A variedade, os desafios e o fato de cada treino ser diferente. A gente está sempre se superando, aprendendo e evoluindo.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Gosto demais porque minha família sempre é bem-vinda, meu filho ama quando vai treinar comigo e fica na parede de escalada, meu marido me diz que eu sempre volto reclamando mais feliz.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Gosto demais porque minha família sempre é bem-vinda, meu filho ama quando vai treinar comigo e fica na parede de escalada, meu marido me diz que eu sempre volto reclamando mais feliz.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
           </ul>
           <ul aria-hidden="true" class="flex items-stretch pb-4">
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Ganhou meu coração justamente por ter exercícios variados.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Ganhou meu coração justamente por ter exercícios variados.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Eu reclamo, mas eu amo! Kkkkkkk”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Eu reclamo, mas eu amo! Kkkkkkk”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Eu amo, as aulas são muito dinâmicas, eu sofro, me divirto e fico feliz por ter feito.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Eu amo, as aulas são muito dinâmicas, eu sofro, me divirto e fico feliz por ter feito.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“É incrível a preocupação que os professores têm com os alunos, isso é um diferencial incrível, não vemos em qualquer academia.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“É incrível a preocupação que os professores têm com os alunos, isso é um diferencial incrível, não vemos em qualquer academia.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Os professores são excelentes e super atenciosos para adaptar exercícios de acordo com a necessidade de cada um. Isso faz muita diferença na escolha.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Os professores são excelentes e super atenciosos para adaptar exercícios de acordo com a necessidade de cada um. Isso faz muita diferença na escolha.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Adoro os eventos! Tento participar o máximo possível! Isso pra mim é um diferencial Energy!”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Adoro os eventos! Tento participar o máximo possível! Isso pra mim é um diferencial Energy!”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Minha evolução foi enorme, tanto em desempenho quanto em consciência corporal. Melhorei minha biomecânica, ganhei força, resistência e confiança. Saí de um histórico de lesões para a conquista de uma maratona. Uma evolução que superou minhas próprias expectativas!”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Minha evolução foi enorme, tanto em desempenho quanto em consciência corporal. Melhorei minha biomecânica, ganhei força, resistência e confiança. Saí de um histórico de lesões para a conquista de uma maratona. Uma evolução que superou minhas próprias expectativas!”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Uma coisa que admiro nos professores da Energy é que todos, cada um com seu jeito, querem ver a gente evoluir e superar nossos próprios limites. Pra quem nem corria... tô maravilhosa! Hahaha. Isso também é mérito de quem ensina, incentiva e acredita no nosso potencial.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Uma coisa que admiro nos professores da Energy é que todos, cada um com seu jeito, querem ver a gente evoluir e superar nossos próprios limites. Pra quem nem corria... tô maravilhosa! Hahaha. Isso também é mérito de quem ensina, incentiva e acredita no nosso potencial.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“O que eu mais gosto é a dinâmica dos treinos! A variedade, os desafios e o fato de cada treino ser diferente. A gente está sempre se superando, aprendendo e evoluindo.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“O que eu mais gosto é a dinâmica dos treinos! A variedade, os desafios e o fato de cada treino ser diferente. A gente está sempre se superando, aprendendo e evoluindo.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
-            <li class="mr-6 w-80 shrink-0 sm:w-96">
-              <blockquote class="card flex flex-col gap-6">
-                <p class="text-body-lg">“Gosto demais porque minha família sempre é bem-vinda, meu filho ama quando vai treinar comigo e fica na parede de escalada, meu marido me diz que eu sempre volto reclamando mais feliz.”</p>
+            <li class="mr-6 flex w-[85vw] max-w-[26rem] shrink-0">
+              <blockquote class="card flex w-full flex-col justify-between gap-6">
+                <p class="text-body">“Gosto demais porque minha família sempre é bem-vinda, meu filho ama quando vai treinar comigo e fica na parede de escalada, meu marido me diz que eu sempre volto reclamando mais feliz.”</p>
                 <footer class="text-sm font-semibold uppercase tracking-wide text-energy-red-lt">Aluno(a) Energy</footer>
               </blockquote>
             </li>
@@ -463,20 +363,16 @@
         <h2 class="text-h2 max-w-2xl">Perguntas frequentes</h2>
 
         <div class="mt-10 divide-y divide-line/30 border-y border-line/30">
-          <details class="py-6">
-            <summary class="cursor-pointer"><h3 class="text-h3">Quais modalidades a Energy oferece?</h3></summary>
-            <p class="mt-4 text-body text-muted">Quatro: TFI (Treinamento Físico Integrado), Kids, Endurance e Motion, para todos os níveis e objetivos.</p>
-          </details>
-          <details class="py-6">
-            <summary class="cursor-pointer"><h3 class="text-h3">A Energy faz avaliação física?</h3></summary>
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden"><h3 class="text-h3">A Energy faz avaliação física?</h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0 text-energy-red-lt transition-transform group-open:rotate-180 motion-reduce:transition-none"><path d="M6 9l6 6 6-6" /></svg></summary>
             <p class="mt-4 text-body text-muted">Sim. A avaliação é completa e ajuda a personalizar o treino conforme o seu objetivo.</p>
           </details>
-          <details class="py-6">
-            <summary class="cursor-pointer"><h3 class="text-h3">Dá para agendar uma aula experimental?</h3></summary>
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden"><h3 class="text-h3">Dá para agendar uma aula experimental?</h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0 text-energy-red-lt transition-transform group-open:rotate-180 motion-reduce:transition-none"><path d="M6 9l6 6 6-6" /></svg></summary>
             <p class="mt-4 text-body text-muted">Sim, e é gratuita. Basta agendar com a nossa equipe.</p>
           </details>
-          <details class="py-6">
-            <summary class="cursor-pointer"><h3 class="text-h3">Quais são os horários de funcionamento?</h3></summary>
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden"><h3 class="text-h3">Quais são os horários de funcionamento?</h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0 text-energy-red-lt transition-transform group-open:rotate-180 motion-reduce:transition-none"><path d="M6 9l6 6 6-6" /></svg></summary>
             <p class="mt-4 text-body text-muted">De segunda a sexta, das 5h às 10h e das 15h às 21h.</p>
 
           </details>
@@ -560,7 +456,6 @@
       </a>
       <nav aria-label="Navegação do rodapé" class="flex flex-wrap gap-6 text-sm text-muted">
         <a href="#modalidades" class="hover:text-white">Modalidades</a>
-        <a href="#experiencia" class="hover:text-white">Experiência</a>
         <a href="#eventos" class="hover:text-white">Eventos</a>
         <a href="#contato" class="hover:text-white">Contato</a>
         <a href="https://www.instagram.com/energy.treinamento" target="_blank" rel="noopener" class="hover:text-white">Instagram</a>
