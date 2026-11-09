@@ -137,3 +137,44 @@ export function iniciarCarrosseis() {
     observador.observe(el);
   });
 }
+
+/**
+ * Troca de fotos no mesmo lugar (fade): [data-slideshow] com várias <picture> empilhadas.
+ * Avança a cada data-intervalo ms, só quando está visível e sem prefers-reduced-motion.
+ */
+export function iniciarSlideshows() {
+  const reduzMovimento = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  document.querySelectorAll('[data-slideshow]').forEach((el) => {
+    const fotos = [...el.children];
+    if (fotos.length < 2) return;
+    const intervalo = Number(el.dataset.intervalo) || 4000;
+    let atual = 0;
+    let timer = 0;
+
+    function mostrar(i) {
+      fotos.forEach((foto, k) => {
+        const ativa = k === i;
+        foto.classList.toggle('opacity-100', ativa);
+        foto.classList.toggle('opacity-0', !ativa);
+        if (ativa) foto.removeAttribute('aria-hidden');
+        else foto.setAttribute('aria-hidden', 'true');
+      });
+      atual = i;
+    }
+
+    function agendar() {
+      clearInterval(timer);
+      if (reduzMovimento.matches) return;
+      timer = setInterval(() => mostrar((atual + 1) % fotos.length), intervalo);
+    }
+
+    // Guardado no elemento para o navegador não coletar o observador.
+    el._observador = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) agendar();
+      else clearInterval(timer);
+    });
+    el._observador.observe(el);
+    reduzMovimento.addEventListener('change', agendar);
+  });
+}

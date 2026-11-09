@@ -53,3 +53,6 @@
 - **Espaco entre secoes reduzido:** `section-y` passou de `clamp(5rem, 9vw, 9rem)` para `clamp(3.5rem, 6vw, 6rem)`. Eventos e Depoimentos trocaram de fundo para manter a alternancia escuro/claro.
 - **Menu do topo opaco** (`bg-ink-0`, antes 95%): o conteudo aparecia por tras dele ao rolar.
 - **FAQ:** a seta nativa do `<details>` ficava numa linha acima da pergunta. Agora e uma seta propria ao lado da pergunta, que gira ao abrir.
+- **FAQ removido** a pedido do cliente. Contato passou para o fundo escuro (`ink-0`) e os campos do formulario para `ink-1`, para manter a alternancia de fundos e o contraste dos campos.
+- **Eventos com fotos que trocam no mesmo lugar** (`[data-slideshow]` em `src/carrossel.js`): fade a cada 4 s, so quando visivel, parado com reduced-motion. Fotos: trilha, Energy Road e corrida. As duas ultimas sao provisorias ate o cliente mandar mais fotos de eventos.
+- Endurance: "pelo aplicativo" virou "por aplicativo".

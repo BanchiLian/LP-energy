@@ -1,6 +1,7 @@
 import './style.css';
 import { iniciarFormularioContato } from './formulario.js';
-import { iniciarCarrosseis } from './carrossel.js';
+import { iniciarCarrosseis, iniciarSlideshows } from './carrossel.js';
 
 iniciarFormularioContato();
 iniciarCarrosseis();
+iniciarSlideshows();

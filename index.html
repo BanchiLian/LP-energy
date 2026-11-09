@@ -127,7 +127,7 @@
             </picture>
             <div class="flex flex-1 flex-col p-6">
               <h3 class="text-h3">Endurance</h3>
-              <p class="mt-2 flex-1 text-body text-muted">Assessoria em modalidades de endurance com planilhas personalizadas por nível e objetivo, pelo aplicativo. Inclui treinos de força presenciais para você evoluir no esporte.</p>
+              <p class="mt-2 flex-1 text-body text-muted">Assessoria em modalidades de endurance com planilhas personalizadas por nível e objetivo, por aplicativo. Inclui treinos de força presenciais para você evoluir no esporte.</p>
               <a href="https://api.whatsapp.com/send?phone=5519996364904&text=Ol%C3%A1!%20Quero%20conhecer%20a%20assessoria%20de%20Endurance%20da%20Energy." target="_blank" rel="noopener" class="btn-primary mt-4 self-start !px-4 !py-2 text-xs">Quero experimentar</a>
             </div>
           </article>
@@ -207,11 +207,23 @@
 
     <section id="eventos" class="section">
       <div class="container-grid grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,26rem)_1fr]">
-        <picture class="block overflow-hidden rounded-card">
-          <source type="image/avif" srcset="/img/trilha-480.avif 480w, /img/trilha-960.avif 960w, /img/trilha-1200.avif 1200w" sizes="(min-width: 1024px) 420px, 100vw" />
-          <source type="image/webp" srcset="/img/trilha-480.webp 480w, /img/trilha-960.webp 960w, /img/trilha-1200.webp 1200w" sizes="(min-width: 1024px) 420px, 100vw" />
-          <img src="/img/trilha-960.webp" width="1200" height="1600" alt="Grupo de alunos da Energy reunido no início de uma trilha" class="h-full w-full object-cover" loading="lazy" decoding="async" />
-        </picture>
+        <div data-slideshow data-intervalo="4000" role="region" aria-roledescription="carrossel" aria-label="Fotos de eventos da Energy" class="relative aspect-[3/4] overflow-hidden rounded-card bg-ink-1">
+          <picture class="absolute inset-0 block opacity-100 transition-opacity duration-700 motion-reduce:transition-none">
+            <source type="image/avif" srcset="/img/trilha-480.avif 480w, /img/trilha-960.avif 960w, /img/trilha-1200.avif 1200w" sizes="(min-width: 1024px) 420px, 100vw" />
+            <source type="image/webp" srcset="/img/trilha-480.webp 480w, /img/trilha-960.webp 960w, /img/trilha-1200.webp 1200w" sizes="(min-width: 1024px) 420px, 100vw" />
+            <img src="/img/trilha-960.webp" width="1200" height="1600" alt="Grupo de alunos da Energy reunido no início de uma trilha" class="h-full w-full object-cover" loading="lazy" decoding="async" />
+          </picture>
+          <picture class="absolute inset-0 block opacity-0 transition-opacity duration-700 motion-reduce:transition-none" aria-hidden="true">
+            <source type="image/avif" srcset="/img/energy-road-480.avif 480w, /img/energy-road-960.avif 960w, /img/energy-road-1200.avif 1200w, /img/energy-road-1600.avif 1600w" sizes="(min-width: 1024px) 420px, 100vw" />
+            <source type="image/webp" srcset="/img/energy-road-480.webp 480w, /img/energy-road-960.webp 960w, /img/energy-road-1200.webp 1200w, /img/energy-road-1600.webp 1600w" sizes="(min-width: 1024px) 420px, 100vw" />
+            <img src="/img/energy-road-960.webp" width="1707" height="2560" alt="Aluna da Energy comemorando durante prova de corrida de rua" class="h-full w-full object-cover" loading="lazy" decoding="async" />
+          </picture>
+          <picture class="absolute inset-0 block opacity-0 transition-opacity duration-700 motion-reduce:transition-none" aria-hidden="true">
+            <source type="image/avif" srcset="/img/corrida-480.avif 480w, /img/corrida-960.avif 960w" sizes="(min-width: 1024px) 420px, 100vw" />
+            <source type="image/webp" srcset="/img/corrida-480.webp 480w, /img/corrida-960.webp 960w" sizes="(min-width: 1024px) 420px, 100vw" />
+            <img src="/img/corrida-960.webp" width="960" height="1280" alt="Alunos da Energy em treino de corrida" class="h-full w-full object-cover" loading="lazy" decoding="async" />
+          </picture>
+        </div>
         <div>
           <p class="eyebrow">Eventos</p>
           <h2 class="text-h2">Eventos e experiências esportivas fora da estrutura</h2>
@@ -357,30 +369,7 @@
       </div>
     </section>
 
-    <section id="faq" class="section">
-      <div class="container-grid">
-        <p class="eyebrow">Dúvidas</p>
-        <h2 class="text-h2 max-w-2xl">Perguntas frequentes</h2>
-
-        <div class="mt-10 divide-y divide-line/30 border-y border-line/30">
-          <details class="group py-6">
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden"><h3 class="text-h3">A Energy faz avaliação física?</h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0 text-energy-red-lt transition-transform group-open:rotate-180 motion-reduce:transition-none"><path d="M6 9l6 6 6-6" /></svg></summary>
-            <p class="mt-4 text-body text-muted">Sim. A avaliação é completa e ajuda a personalizar o treino conforme o seu objetivo.</p>
-          </details>
-          <details class="group py-6">
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden"><h3 class="text-h3">Dá para agendar uma aula experimental?</h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0 text-energy-red-lt transition-transform group-open:rotate-180 motion-reduce:transition-none"><path d="M6 9l6 6 6-6" /></svg></summary>
-            <p class="mt-4 text-body text-muted">Sim, e é gratuita. Basta agendar com a nossa equipe.</p>
-          </details>
-          <details class="group py-6">
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden"><h3 class="text-h3">Quais são os horários de funcionamento?</h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0 text-energy-red-lt transition-transform group-open:rotate-180 motion-reduce:transition-none"><path d="M6 9l6 6 6-6" /></svg></summary>
-            <p class="mt-4 text-body text-muted">De segunda a sexta, das 5h às 10h e das 15h às 21h.</p>
-
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section id="contato" class="section bg-ink-1">
+    <section id="contato" class="section">
       <div class="container-grid grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div>
           <p class="eyebrow">Contato</p>
@@ -389,17 +378,17 @@
           <form id="form-contato" class="mt-8 flex flex-col gap-5" novalidate>
             <div class="flex flex-col gap-2">
               <label for="nome" class="text-sm font-semibold text-white">Nome</label>
-              <input id="nome" name="nome" type="text" required autocomplete="name" aria-describedby="nome-erro" class="rounded-card border border-white/30 bg-ink-0 px-4 py-3 text-white" />
+              <input id="nome" name="nome" type="text" required autocomplete="name" aria-describedby="nome-erro" class="rounded-card border border-white/30 bg-ink-1 px-4 py-3 text-white" />
               <p id="nome-erro" class="hidden text-sm text-energy-red-lt"></p>
             </div>
             <div class="flex flex-col gap-2">
               <label for="whatsapp" class="text-sm font-semibold text-white">WhatsApp</label>
-              <input id="whatsapp" name="whatsapp" type="tel" required inputmode="numeric" autocomplete="tel" placeholder="(19) 99999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Formato (99) 99999-9999" maxlength="15" aria-describedby="whatsapp-erro" class="rounded-card border border-white/30 bg-ink-0 px-4 py-3 text-white" />
+              <input id="whatsapp" name="whatsapp" type="tel" required inputmode="numeric" autocomplete="tel" placeholder="(19) 99999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Formato (99) 99999-9999" maxlength="15" aria-describedby="whatsapp-erro" class="rounded-card border border-white/30 bg-ink-1 px-4 py-3 text-white" />
               <p id="whatsapp-erro" class="hidden text-sm text-energy-red-lt"></p>
             </div>
             <div class="flex flex-col gap-2">
               <label for="modalidade" class="text-sm font-semibold text-white">Modalidade de interesse</label>
-              <select id="modalidade" name="modalidade" required aria-describedby="modalidade-erro" class="rounded-card border border-white/30 bg-ink-0 px-4 py-3 text-white">
+              <select id="modalidade" name="modalidade" required aria-describedby="modalidade-erro" class="rounded-card border border-white/30 bg-ink-1 px-4 py-3 text-white">
                 <option value="" disabled selected>Selecione a modalidade</option>
                 <option>TFI (Treinamento Físico Integrado)</option>
                 <option>Kids</option>
@@ -411,7 +400,7 @@
             </div>
             <div class="flex flex-col gap-2">
               <label for="horario" class="text-sm font-semibold text-white">Melhor horário para treinar</label>
-              <select id="horario" name="horario" required aria-describedby="horario-erro" class="rounded-card border border-white/30 bg-ink-0 px-4 py-3 text-white">
+              <select id="horario" name="horario" required aria-describedby="horario-erro" class="rounded-card border border-white/30 bg-ink-1 px-4 py-3 text-white">
                 <option value="" disabled selected>Selecione o horário</option>
                 <option>Manhã (5h às 10h)</option>
                 <option>Tarde (15h às 18h)</option>
@@ -421,7 +410,7 @@
             </div>
             <div class="flex flex-col gap-2">
               <label for="mensagem" class="text-sm font-semibold text-white">Mensagem (opcional)</label>
-              <textarea id="mensagem" name="mensagem" rows="4" class="rounded-card border border-white/30 bg-ink-0 px-4 py-3 text-white"></textarea>
+              <textarea id="mensagem" name="mensagem" rows="4" class="rounded-card border border-white/30 bg-ink-1 px-4 py-3 text-white"></textarea>
             </div>
             <button type="submit" class="btn-primary mt-2">Agende sua aula experimental grátis</button>
             <p id="form-feedback" role="status" aria-live="polite" class="text-body text-energy-red-lt empty:hidden"></p>
