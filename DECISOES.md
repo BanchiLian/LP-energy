@@ -56,3 +56,5 @@
 - **FAQ removido** a pedido do cliente. Contato passou para o fundo escuro (`ink-0`) e os campos do formulario para `ink-1`, para manter a alternancia de fundos e o contraste dos campos.
 - **Eventos com fotos que trocam no mesmo lugar** (`[data-slideshow]` em `src/carrossel.js`): fade a cada 4 s, so quando visivel, parado com reduced-motion. Fotos: trilha, Energy Road e corrida. As duas ultimas sao provisorias ate o cliente mandar mais fotos de eventos.
 - Endurance: "pelo aplicativo" virou "por aplicativo".
+- **Movimento reduzido nao para mais os carrosseis.** O cliente usa Windows com animacoes desligadas, o que faz o navegador mandar `prefers-reduced-motion: reduce`, e as fotos e os depoimentos ficavam parados. Agora, nesse modo, eles continuam trocando a cada 4 s, mas de uma vez, sem deslize nem fade. A regra do CLAUDE.md fala de animacao de scroll e do canvas do hero; uma troca instantanea a cada 4 s, que pausa com mouse, toque ou foco, nao e movimento continuo.
+- Eventos passou a ter 5 fotos (trilha, Energy Road, corrida, treino em grupo, escalada), repetindo fotos do site ate chegarem as novas.

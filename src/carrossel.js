@@ -8,7 +8,7 @@
  *
  * - Pausa com o mouse em cima, durante o toque e com foco do teclado.
  * - Só avança quando está visível na tela.
- * - Com prefers-reduced-motion não avança sozinho, mas o loop infinito no arraste continua.
+ * - Com prefers-reduced-motion continua avançando, mas troca de uma vez, sem deslizar.
  */
 
 const DURACAO_TRANSICAO_MS = 700;
@@ -52,10 +52,11 @@ function iniciarCarrossel(el, reduzMovimento) {
     const inicio = el.scrollLeft;
     const alvo = (Math.round(inicio / passo) + 1) * passo;
     const t0 = performance.now();
+    const duracao = duracaoTransicao();
     animando = true;
 
     function quadro(agora) {
-      const t = Math.min((agora - t0) / DURACAO_TRANSICAO_MS, 1);
+      const t = duracao ? Math.min((agora - t0) / duracao, 1) : 1;
       el.scrollLeft = inicio + (alvo - inicio) * suavizar(t);
       if (t < 1) {
         requestAnimationFrame(quadro);
@@ -70,10 +71,13 @@ function iniciarCarrossel(el, reduzMovimento) {
 
   function agendar() {
     clearTimeout(timer);
-    if (!visivel || pausado || reduzMovimento.matches) return;
+    if (!visivel || pausado) return;
     // Desconta a transição, para que um card novo entre exatamente a cada "intervalo".
-    timer = setTimeout(avancar, Math.max(0, intervalo - DURACAO_TRANSICAO_MS));
+    timer = setTimeout(avancar, Math.max(0, intervalo - duracaoTransicao()));
   }
+
+  // Com movimento reduzido, o card troca de uma vez, sem deslizar.
+  const duracaoTransicao = () => (reduzMovimento.matches ? 0 : DURACAO_TRANSICAO_MS);
 
   function pausar() {
     pausado = true;
@@ -140,7 +144,8 @@ export function iniciarCarrosseis() {
 
 /**
  * Troca de fotos no mesmo lugar (fade): [data-slideshow] com várias <picture> empilhadas.
- * Avança a cada data-intervalo ms, só quando está visível e sem prefers-reduced-motion.
+ * Avança a cada data-intervalo ms, só quando está visível. Com prefers-reduced-motion a
+ * troca é instantânea (o CSS motion-reduce:transition-none tira o fade).
  */
 export function iniciarSlideshows() {
   const reduzMovimento = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -165,7 +170,6 @@ export function iniciarSlideshows() {
 
     function agendar() {
       clearInterval(timer);
-      if (reduzMovimento.matches) return;
       timer = setInterval(() => mostrar((atual + 1) % fotos.length), intervalo);
     }
 
