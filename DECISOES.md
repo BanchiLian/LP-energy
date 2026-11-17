@@ -60,7 +60,8 @@
 - Eventos passou a ter 5 fotos (trilha, Energy Road, corrida, treino em grupo, escalada), repetindo fotos do site ate chegarem as novas.
 
 ## Fotos novas do cliente (nov/2026)
-- **Capa (`home-*`):** grupo correndo na praia com a bandeira da Energy (1600x1163). No celular o enquadramento fica em `object-[80%_50%]` para a bandeira aparecer; do `md` para cima, centralizado. Lighthouse depois da troca: Performance 97, LCP 2040 ms.
+- **Capa (`podio-*`):** equipe no podio com a bandeira (1600x1066). `object-[55%_50%]` no celular e `md:object-[50%_30%]` no computador, para nao cortar os rostos no topo. (Na primeira versao as fotos da capa e de Eventos ficaram invertidas; o cliente corrigiu.)
 - **Kids (`kids-*`):** aluna na parede de escalada (original 3060x4080, guardado em `originais/` reduzido a 2400 px). `object-[50%_45%]` para mostrar o rosto e as agarras no card baixo.
-- **Eventos:** sairam treino em grupo e escalada; entrou o podio (`podio-*`). Por ser paisagem num quadro em retrato, ele aparece ~2x mais largo que o quadro, entao o `sizes` dele e `(min-width: 1024px) 840px, 180vw`.
+- **Eventos:** sairam treino em grupo e escalada; entrou o grupo correndo na praia (`praia-*`, antes chamado `home-*`). Por ser paisagem num quadro em retrato, aparece ~1,8x mais largo que o quadro: `sizes` = `(min-width: 1024px) 770px, 165vw`, e `object-[83%_50%]` para a bandeira entrar no recorte.
+- **TFI:** o card cortava o aluno pelo meio (so tronco e pernas). Agora `object-[50%_20%]` mostra rosto e barra, e foi criada `cross-765` (tamanho original) porque o card esticava a de 480 px.
 - Fotos antigas (`hero-*`, `escalada-*`) ficam na pasta mas nao sao mais usadas na pagina.
