@@ -58,3 +58,9 @@
 - Endurance: "pelo aplicativo" virou "por aplicativo".
 - **Movimento reduzido nao para mais os carrosseis.** O cliente usa Windows com animacoes desligadas, o que faz o navegador mandar `prefers-reduced-motion: reduce`, e as fotos e os depoimentos ficavam parados. Agora, nesse modo, eles continuam trocando a cada 4 s, mas de uma vez, sem deslize nem fade. A regra do CLAUDE.md fala de animacao de scroll e do canvas do hero; uma troca instantanea a cada 4 s, que pausa com mouse, toque ou foco, nao e movimento continuo.
 - Eventos passou a ter 5 fotos (trilha, Energy Road, corrida, treino em grupo, escalada), repetindo fotos do site ate chegarem as novas.
+
+## Fotos novas do cliente (nov/2026)
+- **Capa (`home-*`):** grupo correndo na praia com a bandeira da Energy (1600x1163). No celular o enquadramento fica em `object-[80%_50%]` para a bandeira aparecer; do `md` para cima, centralizado. Lighthouse depois da troca: Performance 97, LCP 2040 ms.
+- **Kids (`kids-*`):** aluna na parede de escalada (original 3060x4080, guardado em `originais/` reduzido a 2400 px). `object-[50%_45%]` para mostrar o rosto e as agarras no card baixo.
+- **Eventos:** sairam treino em grupo e escalada; entrou o podio (`podio-*`). Por ser paisagem num quadro em retrato, ele aparece ~2x mais largo que o quadro, entao o `sizes` dele e `(min-width: 1024px) 840px, 180vw`.
+- Fotos antigas (`hero-*`, `escalada-*`) ficam na pasta mas nao sao mais usadas na pagina.
